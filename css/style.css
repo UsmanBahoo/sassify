@@ -44,6 +44,7 @@ header{
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
+    gap: 32px; /* Added gap between cards */
 }
 .item{
     width: 380px;
@@ -315,6 +316,7 @@ header{
     display: flex;
     padding-top: 73px;
     justify-content: space-between;
+    gap: 32px; /* Added gap between price cards */
 }
 .price-card{
     width: 384px;
@@ -407,6 +409,7 @@ header{
     padding-top: 60px;
     align-items: center;
     justify-content: space-between;
+    gap: 32px; /* Added gap between testimonial cards */
 }
 .testomonial{
     max-width: 380px;
