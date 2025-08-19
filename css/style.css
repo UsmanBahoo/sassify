@@ -1,3 +1,27 @@
+@media (max-width: 991.98px) {
+    .sf-brands ul {
+      transform: translateX(-5%);
+    }
+}
+@media (max-width: 991.98px) {
+    .heading {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 20px;
+    }
+    .heading button {
+        width: 300px;
+        align-self: flex-start;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 991.98px) {
+    .image-box {
+        margin-top: 50px;
+        transform: translateX(-15%);
+    }
+}
 @media (max-width: 900px) {
     .heading {
         flex-direction: row !important;
@@ -101,32 +125,36 @@ header{
     padding-bottom: 77.89px;
     background: #F6F5FF;
 }
-.digital-service-inner{
+.digital-service-inner {
         padding-top: 90px;
         display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 32px;
+}
+
+@media (min-width: 992px) {
+    .digital-service-inner {
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-}
-
-@media (max-width: 900px) {
-    .digital-service-inner {
-        flex-direction: column !important;
-        align-items: stretch;
-        gap: 24px;
+        gap: 40px;
     }
-    .digital-service-inner .image-box,
-    .digital-service-inner .text-box {
-        width: 100%;
-        text-align: center;
+    .text-box {
+        width: 50%;
+        max-width: 524px;
+        text-align: left;
     }
-    .digital-service-inner .image-box img {
-        width: 100%;
-        max-width: 100%;
+    .image-box {
+        width: 50%;
+        max-width: 610px;
+        align-items: flex-end;
     }
 }
-
-.text-box{
-    width: 524px;
+.text-box {
+    width: 100%;
+    max-width: 100%;
 }
 .text-box h1{
     margin: 0;
@@ -160,13 +188,19 @@ header{
     font-family: 'Inter', sans-serif;
     background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
 }
-.image-box{
-    width: 610px;
+.image-box {
+    width: 100%;
+    max-width: 100%;
     z-index: 1;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.image-box img{
-    width: 598px;
+.image-box img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 .img-bg{
     right: 0;
@@ -179,6 +213,7 @@ header{
     transform: rotate(180deg);
     background: linear-gradient(106.75deg, #2272FF 0%, #0D03C3 100%);
 }
+
 /*********** Digital Services Section End ************/
 .sf-work-smart{
     padding: 131px 0;
